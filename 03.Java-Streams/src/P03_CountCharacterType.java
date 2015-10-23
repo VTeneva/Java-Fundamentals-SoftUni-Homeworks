@@ -36,15 +36,9 @@ public class P03_CountCharacterType {
                 symbol = inputRead.read();
             }
 
-            dos.writeUTF("Vowels: ");
-            dos.writeInt(vowels);
-
-            dos.writeUTF("Consonants: ");
-            dos.writeInt(consonants);
-
-            dos.writeUTF("Punctuation: ");
-            dos.writeInt(punctuation);
-
+            dos.writeBytes(String.format("Vowels: %d\n", vowels));
+            dos.writeBytes(String.format("Consonants: %d\n", consonants));
+            dos.writeBytes(String.format("Punctuation: %d\n", punctuation));
 
             //System.out.printf("%d, %d, %d", vowels, consonants,punctuation);
 
